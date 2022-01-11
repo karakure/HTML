@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<style>
+.input--hide:checked+.top__category-title+.top__category-list {
+  max-height: 100vh;
+  opacity: 1;
+  transition: .3s;
+  visibility:  visible;
+}
+.top__category-list {
+  margin-bottom: 0;
+  max-height: 0;
+  opacity: 0;
+  transition: .2s;
+  visibility: hidden;
+  font-size: 14px;
+}
+.input--hide{
+    display: none;
+}
+</style>
+</head>
+<body id="top">
+  <div class="top__category">
+      <input id="top__category__input" class="input--hide" type="checkbox">
+      <label class="top__category-title" for="top__category__input">CSSのみでinputでエキスパンド</label>
+      <ul class="top__category-list">
+        <li><a href="">1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">4</a></li>
+        <li><a href="">5</a></li>
+      </ul>
+  </div>
+</body>
